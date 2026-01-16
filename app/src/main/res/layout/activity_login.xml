@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00122B"> <TextView
+        android:id="@+id/brand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TK XTREAM \nPlayer Pro"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="http://server-url.me:8080"
+        android:textColorHint="#88FFFFFF"
+        android:textColor="#FFFFFF"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/brand_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:textColorHint="#88FFFFFF"
+        android:textColor="#FFFFFF"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/etUrl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#88FFFFFF"
+        android:textColor="#FFFFFF"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/etUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#0066CC"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/etPass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
