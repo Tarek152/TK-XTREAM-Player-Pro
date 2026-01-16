@@ -12,7 +12,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="TK XTREAM Pro"
         android:theme="@style/Theme.AppCompat.NoActionBar"
-        android:banner="@drawable/app_banner"> <activity
+        android:banner="@drawable/app_banner"> 
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
